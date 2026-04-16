@@ -22,24 +22,45 @@ export default function SearchPage() {
     };
 
     return (
-        <div className="p-6">
-            <input
-                className="border p-2 w-full"
-                placeholder="Search ayah..."
-                onChange={(e) => setQuery(e.target.value)}
-            />
-            <button
-                onClick={handleSearch}
-                className="mt-2 px-4 py-2 bg-blue-500 text-white"
-            >
-                Search
-            </button>
+        <div>
+            <h1 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-6 h-6"
+                >
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="M21 21l-4.3-4.3" />
+                </svg>
+                Search Ayah
+            </h1>
 
-            {results.map((r, i) => (
-                <p key={i} className="mt-2 bg-white p-2 rounded">
-                    {r.text}
-                </p>
-            ))}
+            <div className="flex gap-2 mb-4">
+                <input
+                    className="border p-3 w-full rounded"
+                    placeholder="Search translation..."
+                    onChange={(e) => setQuery(e.target.value)}
+                />
+                <button
+                    onClick={handleSearch}
+                    className="px-5 bg-green-600 text-white rounded"
+                >
+                    Search
+                </button>
+            </div>
+
+            <div className="space-y-3">
+                {results.map((r, i) => (
+                    <p key={i} className="bg-white p-3 rounded shadow">
+                        {r.text}
+                    </p>
+                ))}
+            </div>
         </div>
     );
 }

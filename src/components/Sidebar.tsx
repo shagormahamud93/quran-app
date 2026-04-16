@@ -25,14 +25,42 @@ export default function Sidebar() {
             <h1 className="text-xl font-bold mb-6 text-green-600">
                 Quran App
             </h1>
-
             <nav className="space-y-3 mb-6">
-                <Link href="/" className="block hover:text-green-600">
+
+                <Link href="/" className="flex items-center gap-2 hover:text-green-600">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="w-5 h-5"
+                    >
+                        <path d="M3 12l9-9 9 9" />
+                        <path d="M9 21V9h6v12" />
+                    </svg>
                     Home
                 </Link>
-                <Link href="/search" className="block hover:text-green-600">
+
+                <Link href="/search" className="flex items-center gap-2 hover:text-green-600">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="w-5 h-5"
+                    >
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="M21 21l-4.3-4.3" />
+                    </svg>
                     Search
                 </Link>
+
             </nav>
             <div>
                 <h2 className="font-semibold mb-2">Settings</h2>
