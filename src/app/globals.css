@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
 @import "tailwindcss";
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-} */
+.font-arabic {
+  font-family: 'Amiri', serif;
+}
