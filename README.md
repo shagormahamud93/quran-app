@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📖 Quran Web Application
 
-## Getting Started
+A modern and responsive Quran web application built with **Next.js**, **Tailwind CSS**, and public Quran APIs.
+Users can explore Surahs, read Ayahs with translation, and customize Arabic font settings.
 
-First, run the development server:
+---
+
+## 🚀 Live Demo
+
+👉 https://quran-app-dusky.vercel.app/
+
+## 📂 GitHub Repository
+
+👉 https://github.com/shagormahamud93/quran-app
+
+---
+
+## ✨ Features
+
+* 📚 **Surah List Page**
+
+  * Displays all 114 Surahs
+  * Shows Arabic & English names
+
+* 📖 **Ayah Details Page**
+
+  * View full Surah with Arabic text
+  * English translation alongside
+
+* 🔍 **Search Functionality**
+
+  * Search Ayahs by translation text
+  * Fast filtering with instant results
+
+* ⚙️ **Settings Panel (Sidebar)**
+
+  * ✅ Arabic Font Size control (A- / A+)
+  * ✅ Arabic Font Style selection (Amiri, Scheherazade)
+  * ✅ Settings saved in **localStorage**
+
+* 📱 **Responsive Design**
+
+  * Mobile-friendly sidebar with toggle
+  * Works smoothly across all devices
+
+---
+
+## 🛠 Tech Stack
+
+* **Frontend:** Next.js (App Router, SSG)
+* **Styling:** Tailwind CSS
+* **API:** Al Quran Cloud API
+* **State:** React Hooks (useState, useEffect)
+
+---
+
+## ⚡ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/shagormahamud93/quran-app.git
+cd quran-app
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open 👉 http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+src/
+ ├── app/
+ │   ├── page.tsx          # Home (Surah list)
+ │   ├── search/           # Search page
+ │   └── surah/[id]/       # Surah details
+ │
+ ├── components/
+ │   ├── Sidebar.tsx
+ │   ├── SurahCard.tsx
+ │   └── AyahCard.tsx
+ │
+ ├── utils/
+ │   └── api.ts
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Key Highlights
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Clean and modern UI
+* Fully responsive layout
+* Dynamic Arabic font customization
+* Optimized API data fetching
+* Simple and maintainable code structure
 
-## Deploy on Vercel
+## 🎥 Demo Video
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👉 https://drive.google.com/file/d/1btvoubQAX16bkf1vIX_eVAjwY8EGnJMp/view?usp=sharing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+⭐ If you like this project, feel free to give it a star!
