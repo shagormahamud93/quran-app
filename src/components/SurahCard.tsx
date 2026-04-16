@@ -1,10 +1,14 @@
+import Link from "next/link";
 
-const SurahCard = () => {
-    return (
-        <div>
-            <h1>Surah Card</h1>
-        </div>
-    );
-};
-
-export default SurahCard;
+export default function SurahCard({ surah }: any) {
+  return (
+    <Link href={`/surah/${surah.number}`}>
+      <div className="p-4 bg-white rounded shadow hover:bg-gray-50">
+        <h2 className="font-bold">
+          {surah.number}. {surah.englishName}
+        </h2>
+        <p>{surah.name}</p>
+      </div>
+    </Link>
+  );
+}
