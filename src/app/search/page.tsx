@@ -23,7 +23,7 @@ export default function SearchPage() {
 
     return (
         <div>
-            <h1 className="text-2xl font-bold mb-4 flex items-center gap-2">
+            <h1 className="text-2xl font-bold mb-4 flex items-center gap-2 mt-20 md:mt-0">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -43,7 +43,7 @@ export default function SearchPage() {
             <div className="flex gap-2 mb-4">
                 <input
                     className="border p-3 w-full rounded"
-                    placeholder="Search translation..."
+                    placeholder="Search Ayah text..."
                     onChange={(e) => setQuery(e.target.value)}
                 />
                 <button

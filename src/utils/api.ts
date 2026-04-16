@@ -11,10 +11,8 @@ export const getSurahDetails = async (id: string) => {
     );
 
     if (!res.ok) {
-      console.log("API status:", res.status);
       return null;
     }
-
     const json = await res.json();
     return json;
   } catch (error) {

@@ -4,10 +4,10 @@ import Sidebar from "@/components/Sidebar";
 export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
-      <body className="bg-gray-50">
+      <body className="bg-[#f8faf7]">
         <div className="flex">
           <Sidebar />
-          <main className="flex-1 p-6 ml-64">
+          <main className="flex-1 p-6">
             {children}
           </main>
         </div>
